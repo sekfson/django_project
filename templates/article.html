@@ -1,0 +1,15 @@
+{% extends 'template_base.html' %}
+{%block titre%}article{%endblock%}
+
+{%block contenu %}
+
+    
+    {% for article in articles %}
+
+    <h1>{{article.titre}}</h1>
+    <p>{{ article.contenu}}</p>
+    <span>{{article.date_de_publication}}</span> 
+
+    {% endfor %}
+
+{%endblock%}
